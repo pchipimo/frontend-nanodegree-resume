@@ -30,9 +30,9 @@ var formattedSkills = HTMLskills.replace("%data%", bio.skills);
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
-$("#header").append(formattedContact);
 $("#header").append(formattedPicture);
 $("#header").append(formattedMessaage);
 $("#header").append(HTMLskillsStart);
 $("#header").append(formattedSkills);
+$("#header").append(formattedContact);
 
