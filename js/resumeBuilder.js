@@ -33,17 +33,19 @@ education["school"] = "University of Massachusetts Amherst";
 education["years_attended"] = "2011 - 2015"
 education["city"] = "Amherst, MA"
 
-var projects = {[
+var projects = {
+	"panther":
 	{
 		"name": "Blue Panther",
 		"type": "Firefighting Robot",
 		"role": "Team Leader",
 		"awards": "First Place"
 	},
+	"viano":
 	{
 		"name": "Viano",
 		"type": "Virtual Piano",
 		"role": "Teaam Leader",
 		"awards": "Double First Place"
 	}
-]};
+};
