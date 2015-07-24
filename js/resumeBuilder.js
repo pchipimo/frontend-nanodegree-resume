@@ -33,27 +33,17 @@ education["school"] = "University of Massachusetts Amherst";
 education["years_attended"] = "2011 - 2015"
 education["city"] = "Amherst, MA"
 
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedContact = HTMLcontactGeneric.replace("%contact%", "Means of contact:").replace("%data%", bio.contact_info);
-var formattedPicture = HTMLbioPic.replace("%data%", bio.picture_URL);
-var formattedMessaage = HTMLwelcomeMsg.replace("%data%", bio.welcome_message);
-var formattedSkills = HTMLskills.replace("%data%", bio.skills);
-
-var formattedPosition = HTMLworkTitle.replace("%data%", work.position);
-var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
-var formattedYears = HTMLworkDates.replace("%data%", work.years_worked);
-var formattedCity = HTMLworkLocation.replace("%data%", work.city);
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#header").append(formattedPicture);
-$("#header").append(formattedMessaage);
-$("#header").append(HTMLskillsStart);
-$("#header").append(formattedSkills);
-$("#header").append(formattedContact);
-
-$("#workExperience").append(formattedPosition);
-$("#workExperience").append(formattedEmployer);
-$("#workExperience").append(formattedYears);
-$("#workExperience").append(formattedCity);
+var projects = {[
+	{
+		"name": "Blue Panther",
+		"type": "Firefighting Robot",
+		"role": "Team Leader",
+		"awards": "First Place"
+	},
+	{
+		"name": "Viano",
+		"type": "Virtual Piano",
+		"role": "Teaam Leader",
+		"awards": "Double First Place"
+	}
+]};
